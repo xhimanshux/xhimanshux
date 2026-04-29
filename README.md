@@ -1,178 +1,24 @@
-# 🔍 NetScan — Network Intelligence Dashboard
+# 💫 About Me:
+Cybersecurity enthusiast and Computer Science student passionate about secure software, problem solving, and building practical projects. Skilled in C++, Java, Kotlin, and web technologies, with hands-on experience in security tools like Wireshark, Maltego, and TryHackMe. Always learning, building, and improving through coding challenges and real-world projects.
 
-A full-stack, cyberpunk-themed Nmap scanner web application with real-time streaming output, scan history, and export features.
 
----
+# 💻 Tech Stack:
+![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![Windows Terminal](https://img.shields.io/badge/Windows%20Terminal-%234D4D4D.svg?style=for-the-badge&logo=windows-terminal&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=Cloudflare&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase) ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7) ![Render](https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) ![AmazonDynamoDB](https://img.shields.io/badge/Amazon%20DynamoDB-4053D6?style=for-the-badge&logo=Amazon%20DynamoDB&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![Playwright](https://img.shields.io/badge/-playwright-%232EAD33?style=for-the-badge&logo=playwright&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) ![Godot Engine](https://img.shields.io/badge/GODOT-%23FFFFFF.svg?style=for-the-badge&logo=godot-engine)
+# 📊 GitHub Stats:
+![](https://github-readme-stats.shion.dev/api?username=xhimanshux&theme=dark&hide_border=false&include_all_commits=false&count_private=false)<br/>
+![](https://streak-stats.demolab.com/?user=xhimanshux&theme=dark&hide_border=false)<br/>
+![](https://github-readme-stats.shion.dev/api/top-langs/?username=xhimanshux&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
 
-## ✨ Features
+## 🏆 GitHub Trophies
+![](https://github-profile-trophy.vercel.app/?username=xhimanshux&theme=radical&no-frame=false&no-bg=true&margin-w=4)
 
-- **4 Scan Modes**: Quick, Full, OS Detection, Top-10K Port Scan  
-- **Real-time terminal output** via Server-Sent Events (SSE)  
-- **Structured results**: port table, OS fingerprint, scan stats  
-- **Scan history** saved in browser localStorage  
-- **Export**: JSON or TXT download, clipboard copy  
-- **Rate limiting**: 10 scans per 15 min per IP  
-- **Input sanitization**: blocks shell injection characters  
-- **Responsive**: works on mobile and desktop  
+### ✍️ Random Dev Quote
+![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
 
----
-
-## 🗂 Folder Structure
-
-```
-nmap-scanner/
-├── client/                  # React frontend
-│   ├── public/index.html
-│   └── src/
-│       ├── App.jsx          # Main application (all pages + components)
-│       ├── index.js         # Entry point
-│       └── index.css        # Cyberpunk dark theme
-├── server/
-│   ├── index.js             # Express API + nmap execution + SSE
-│   └── package.json
-├── package.json             # Root convenience scripts
-└── README.md
-```
+### 🔝 Top Contributed Repo
+![](https://github-contributor-stats.vercel.app/api?username=xhimanshux&limit=5&theme=dark&combine_all_yearly_contributions=true)
 
 ---
+[![](https://komarev.com/ghpvc/?username=xhimanshux&icon=0&color=0)](https://visitcount.itsvg.in)
 
-## 🚀 Quick Start
-
-### Prerequisites
-
-1. **Node.js** v18+ — https://nodejs.org  
-2. **nmap** installed on your system:
-
-   ```bash
-   # Ubuntu/Debian
-   sudo apt-get install nmap
-
-   # macOS
-   brew install nmap
-
-   # Windows (WSL recommended, or download from https://nmap.org/download.html)
-   ```
-
-### Installation & Run
-
-```bash
-# 1. Clone / download this project
-cd nmap-scanner
-
-# 2. Install server dependencies
-cd server && npm install && cd ..
-
-# 3. Install client dependencies
-cd client && npm install && cd ..
-
-# 4. Start the backend (terminal 1)
-cd server && node index.js
-# → API running at http://localhost:3001
-
-# 5. Start the frontend (terminal 2)
-cd client && npm start
-# → App running at http://localhost:3000
-```
-
-Open **http://localhost:3000** in your browser.
-
----
-
-## 🔌 API Reference
-
-### `GET /api/health`
-Returns server status.
-
-### `GET /api/nmap-check`
-Checks if nmap is installed and returns its version.
-
-### `GET /api/scan/stream?target=<host>&scanType=<type>`
-SSE endpoint — streams scan events in real time.
-
-**Parameters:**
-| Param | Values | Description |
-|-------|--------|-------------|
-| `target` | IP or domain | The host to scan |
-| `scanType` | `quick`, `full`, `os`, `ports` | Scan mode |
-
-**SSE Events emitted:**
-| Event | Payload | Description |
-|-------|---------|-------------|
-| `start` | `{scanId, target, scanType}` | Scan initiated |
-| `progress` | `{percent, message}` | Progress update |
-| `output` | `{line}` | Raw nmap stdout line |
-| `warning` | `{message}` | nmap warning/note |
-| `result` | `{scanId, parsed, rawOutput}` | Final structured results |
-| `done` | `{scanId}` | Scan complete |
-| `error` | `{message}` | Error occurred |
-
----
-
-## 🔒 Security Measures
-
-| Measure | Implementation |
-|---------|---------------|
-| Input validation | Regex check for valid IP/CIDR/domain |
-| Shell injection prevention | Blocks `;`, `&`, `|`, `` ` ``, `$`, `<`, `>`, `\`, `'`, `"`, `!` |
-| Rate limiting | `express-rate-limit`: 10 req / 15 min / IP |
-| Allowed scan types whitelist | Only 4 safe flag sets, no raw socket or aggressive scripts |
-| Process timeout | 5-minute max per scan via SIGTERM |
-| CORS restriction | Only localhost:3000 allowed |
-
----
-
-## 🧪 Nmap Commands Used
-
-```bash
-# Quick Scan
-nmap -T4 -F --open <target>
-
-# Full Scan
-nmap -T4 -p- --open -sV <target>
-
-# OS Detection
-nmap -T4 -O -sV --open <target>
-
-# Port Scan (Top 10K)
-nmap -T4 -p 1-10000 --open -sV <target>
-```
-
-> Note: OS detection (`-O`) may require root/sudo on some systems.
-
----
-
-## 📱 UI Pages
-
-- **Scanner** — Target input, scan type selection, real-time terminal output, structured results
-- **History** — All past scans (up to 50), expandable with export options
-- **Settings** — Security info, preferences, backend configuration
-
----
-
-## 🛠 Tech Stack
-
-| Layer | Tech |
-|-------|------|
-| Frontend | React 18, vanilla CSS (no Tailwind to keep zero build complexity) |
-| Backend | Node.js, Express 4 |
-| Scan Engine | nmap via `child_process.spawn` |
-| Streaming | Server-Sent Events (SSE) |
-| Storage | Browser `localStorage` |
-| Rate Limiting | `express-rate-limit` |
-
----
-
-## 🔮 Bonus / Roadmap
-
-- [ ] JWT authentication (login/signup)
-- [ ] PostgreSQL scan history database
-- [ ] Live CVE lookup per service/version
-- [ ] Scheduled recurring scans
-- [ ] Network topology map visualization
-
----
-
-## ⚠️ Legal Notice
-
-Only scan hosts you own or have **explicit written permission** to test.  
-Unauthorized port scanning may be illegal in your jurisdiction.
+<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
